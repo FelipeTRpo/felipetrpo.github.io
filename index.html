@@ -5,14 +5,18 @@
         <title>Pokemon starters gen 1</title>
         <meta property="og:title" content="Pokemon starter gen 1">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://raw.githubusercontent.com/FelipeTRpo/felipetrpo.github.io/main/pokebola.png">
+        <meta property="og:image" content="https://github.com/FelipeTRpo/felipetrpo.github.io/blob/main/pokebola.png?raw=true">
         <meta property="og:url" content="https://felipetrpo.github.io/">
         <meta property="og:description" content="Escolha o seu pokemon starter da gen 1">
+
+        </style>
     </head>
     <body>
+        <fieldset>
         <h1><strong>Pokemon starters da primeira geração</strong></h1>
         <p>Os starters do pokemon geralmente são divididos em 3 <i>elementos</i> :<font style="color:green">planta</font>, <font style="color:red">fogo</font> e <font style="color:blue">agua</font> <br>
         Na primeira geração os starters são:<font style="color:green">Bulbasaur</font>, <font style="color:red">Charmander</font> e <font style="color:blue">Squirtle</font> </p>
+        
         <table>
             <tr>
                 <th style="font-size:200%">Foto</th>
@@ -39,8 +43,33 @@
                 <th style="color:blue">Defesa</th>
             </tr>
         </table>
+        
         <p>Voce pode clicar nos nomes dos pokemons para te levar a pagina da <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank"><b>bulbapedia</b></a> de cada pokemon, lá voce poderá encontrar mais informações relacionada a cada um deles.</p>
         <!- o pickachu tambem pode ser escolhido como starter, talvez poderia incluir ele nessa lista->
+            
+
+            <form method="post">
+                <fieldset>
+                    <legend><strong style="font-size:150%">Depois dessas informações qual pokemon voce escolheria?</strong></legend>
+                        <p>
+                            <input type="radio" name="pokemonstarter" id="pokemon1" value="Bulbasaur" />
+                            <label for="pokemon1">Bulbasaur</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="pokemonstarter" id="pokemon2" value="Charmander"/>
+                            <label for="pokemon2">Charmander</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="pokemonstarter" id="pokemon3" value="Squirtle"/>
+                            <label for="pokemon3">Squirtle</label>
+                        </p>
+                        <div class="button">
+                            <button type="submit">Enviar!</button>
+                            <button type="reset">Resetar!</button>
+                        </div>
+                    </fieldset>
+            </form>
+        </fieldset>
     </body>
 
 </html>
