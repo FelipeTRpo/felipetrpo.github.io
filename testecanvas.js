@@ -78,32 +78,34 @@ class Ball{
             this.ypos= windowheight/2;
             this.dx= this.speed*2;
             this.dy= this.speed;
-            scorep2.score+=1
+            scorep1.score+=1
         }
         if( this.xpos + this.dx < this.radius ){
             this.xpos= windowwidth/2;
             this.ypos=windowheight/2;
             this.dx= this.speed*2;
             this.dy= this.speed;
-            scorep1.score+=1
+            scorep2.score+=1
         }
 
         if(this.ypos +this.dy > windowheight-this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
                 this.dy += 1;
-
+                this.dx += 1.5;
             }else{
                 this.dy+= -1;
+                this.dx+= -1.5;
             }
         }
         if( this.ypos + this.dy < this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
                 this.dy += 1;
-
+                this.dx += 1.5;
             }else{
                 this.dy+= -1;
+                this.dx+= -1.5;
             }
             
         }
