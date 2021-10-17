@@ -91,21 +91,21 @@ class Ball{
         if(this.ypos +this.dy > windowheight-this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
-                this.dy += 1;
-                this.dx += 1.5;
+                this.dy += 0.5;
+                this.dx += 1;
             }else{
-                this.dy+= -1;
-                this.dx+= -1.5;
+                this.dy+= -0.5;
+                this.dx+= -1;
             }
         }
         if( this.ypos + this.dy < this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
-                this.dy += 1;
-                this.dx += 1.5;
+                this.dy += 0.5;
+                this.dx += 1;
             }else{
-                this.dy+= -1;
-                this.dx+= -1.5;
+                this.dy+= -0.5;
+                this.dx+= -1;
             }
             
         }
