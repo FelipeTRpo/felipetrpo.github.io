@@ -306,7 +306,7 @@ function keyUpHandler(e) {
             }
             
         }
-        //desabilitar o bot
+        //desabilitar o bot.
         if(botpressed1) {
             disablebot=1;
             player2.speed=6;
