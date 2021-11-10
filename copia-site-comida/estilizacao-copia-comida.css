@@ -1,0 +1,476 @@
+@font-face {
+    font-family: 'font-awesome';
+    src: url('assets/fontawesome-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wixfreemium';
+    src: url('assets/wixfreemiumfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair-regular';
+    src: url('assets/playfair-display-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair-italic';
+    src: url('assets/playfair-display-italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair-bold';
+    src: url('assets/playfair-display-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url('assets/avenir-LT.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('assets/Helvetica-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #576A7A;
+    font-weight: none;
+}
+a:link {
+    color:#576A7A ;
+}
+
+a:visited {
+    color: #576A7A;
+}
+
+a:focus {
+    color: #576A7A;
+}
+
+a:hover {
+    color: #FA773C;
+}
+body{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu-flutuante{
+    z-index: 999999999;
+    width: 90%;
+    display: flex;
+    position: fixed;
+    top:0;
+    border-bottom: 2px solid #576A7A ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    color:#576A7A;
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+.nome-dono-site{
+    font-size: 24px;
+    padding-left: 5px;
+    font-family: "playfair-bold";
+}
+.subtitulo-dono-site{
+    font-size: 12px;
+    padding-left: 5px;
+    font-family: "avenir";
+}
+.borda-baixo{
+    width: 90%;
+    border-bottom: 2px solid #576A7A ;
+}
+.titulo-site{
+    display:flex;
+
+}
+.icone-cupcake{
+    width: 31px;
+    height: 40px;
+}
+.menu-de-navevacao{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    font-family: "avenir";
+    font-size: 14px;
+}
+.icone-facebook, .icone-instagram, .icone-pinterest, .icone-youtube{
+    width: 22px;
+    height: 22px;
+    padding-right: 9px;
+}
+.intro-site{
+    padding-top: 150px;
+    size: 90%;
+    border-bottom: 2px solid #576A7A ;
+    padding-bottom: 110px;
+}
+.texto-bem-vindo{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.caixa-img-comida{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.caixa-comida-1{
+    text-align: center;
+}
+.titulo-comida-1{
+    font-size: 18px;
+    padding-top: 16px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+}
+.subtitulo-comida-1{
+    font-size: 15px;
+    font-family: "helvetica";
+    color:#000000;
+}
+.caixa-msg-motivacional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.img-coracao-laranja{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.msg-motivacional{
+    font-size: 34px;
+    font-family: "playfair-italic";
+    color:#576A7A;
+    line-height: 1.5em;
+    padding-bottom: 50px;
+}
+.subtitulo-msg-motivacional{
+    font-size: 16px;
+    font-family: "avenir";
+    color:#576A7A;
+    line-height: 1.5em;
+    padding-bottom: 40px;
+}
+.secao-ultimas-receitas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.img-colher-garfo{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+.caixa-img-comida-2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 40px;
+    padding-bottom: 150px;
+}
+.titulo-ultimas-receitas{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.caixa-comida-2{
+    position: relative;
+    width: 484px;
+    height: 484px;
+    background-color: black;
+}
+.img-comida-2{
+    position: relative;
+    width: 484px;
+    height: 484px;
+    opacity: 0.5;
+}
+.caixa-texto-superior{
+    color:#FFFFFF;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    display: flex;
+    width: 95px ;
+    height: 33px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-family: "avenir";
+}
+.caixa-texto-inferior{
+    color:#FFFFFF;
+    position: absolute;
+    bottom: 0;
+    width: 394px;
+    height: 108px;
+    margin:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: start;
+}
+.titulo-receita{
+    font-size: 22px;
+    font-family: "playfair-italic";
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
+}
+.icones-inferiores{
+    display: flex;
+    justify-content: space-between;
+}
+.icones-inferiores-esquerda{
+    display: flex;
+    font-family: "avenir";
+}
+.icones-inferiores-direita{
+    display: flex;
+    font-family: "avenir"
+
+}
+.icone-olho, .icone-comentario{
+    padding-right: 5px;
+}
+.contagem-visualizacao{
+    padding-right: 10px;
+}
+.contagem-curtidas{
+    padding-right: 5px;
+}
+.secao-sobre-mim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+}
+
+.icone-luva{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    transform: rotate(45deg);
+}
+.titulo-sobre-mim{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.caixa-dentro-sobre-mim{
+    display: flex;
+    justify-self: left;
+    padding-bottom: 100px;
+
+}
+.nome-dona-site{
+    font-size: 30px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: left;
+    font-weight: lighter;
+    padding-top:100px;
+}
+.caixa-textos-sobre-mim{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.texto-sobre-mim{
+    font-size: 14px;
+    font-family: "avenir";
+    color:#576A7A;
+    text-align: left;
+    line-height: 2.2em;
+    padding-bottom: 30px;
+}
+.botao-conhecame-mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    justify-self: left;
+    color: #FA773C;
+    border: 1px solid #FA773C;
+}
+a.botao-conhecame-mais{
+    color: #FA773C;
+}
+a.botao-conhecame-mais:hover{
+    background-color: #FA773C;
+    color: #FFFFFF;
+}
+.icone-3-fotos{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.titulo-fotos-comidas-variadas{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.fotos-comidas-variadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-bottom: 80px;
+}
+.caixa-img-comida-3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.caixa-comida-3{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.img-comida-3{
+    max-width:250px ;
+    min-width:150px;
+    max-height:250px;
+    min-height:150px;
+    position: relative;
+}
+.caixa-comida-3:hover .texto-comida-3{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    font-size: 24px;
+    font-family: "avenir";
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #00000080;
+}
+.texto-comida-3{
+    display: none;
+    top: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #00000080;
+}
+.icone-email{
+    fill: #FA773C;
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.secao-nao-perca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}
+.titulo-nao-perca{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.texto-nao-perca{
+    color:#576A7A;
+    font-size: 18px;
+    font-family: "playfair-regular";
+    text-align: center;
+    padding-bottom: 40px;
+}
+.campo-email{
+    margin-bottom: 40px;
+    
+}
+.campo-digitar-email{
+    width: 347px;
+    height: 38px;
+    border-bottom: 1px solid #FA773C;
+    
+}
+.botao-assine-ja{
+    width: 100px ;
+    height: 40px;
+    border: 1px solid #FA773C;
+    color: #FA773C;
+    background-color: #FFFFFF;
+}
+.icone-email-pequeno{
+    height: 14px;
+    width: 14px;
+    stroke: #576A7A;
+    stroke-width: 5%;
+
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: "playfair-regular";
+    color: #576A7A;
+    padding: 30px;
+}
