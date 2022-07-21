@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PokeMart</title>
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="shortcut icon" href="./img/faviconfinal.png" type="image/x-icon">
+</head>
+<body>
+        <header id="header">
+            <div class="container">
+            <h1>PokeMart</h1>
+
+                <nav id="header-right">
+                    <ul>
+                        <li data-type="todos">Todos</li>
+                        <li data-type="pokeball">Pokeballs</li>
+                        <li data-type="potion">Potions</li>
+                        <li data-type="machine">Machines</li>
+                        <li data-type="medicine">Medicine</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div class="container">
+        <main>
+            <section id="vitrine">
+                <h2>Escolha seu pokémon inicial</h2>
+                <div id="initial-pokemon">
+
+                    <input type="radio" name="starter" id="bulbasaur" value="bulbasaur" ><div><label for="bulbasaur"><img src="./img/bulbasaur.webp" alt="bulbasaur" ></label></div>
+                    <input type="radio" name="starter" id="charmander" value="charmander"><div><label for="charmander"><img src="./img/charmander.webp" alt="charmander"></label></div>
+                    <input type="radio" name="starter" id="squirtle" value="squirtle"><div><label for="squirtle"><img src="./img/squirtle.webp" alt="squirtle"></label></div>
+                </div>
+                <h2>Compre seus itens</h2>
+                <div id="selling-items">
+                    <div class="card">
+                        <img src="./img/pokeball.webp" alt="pokeball">
+                        <div class="card-info">
+                            <p class="tag">Pokeball</p>
+                            <h3 class="card-title">Pokeball</h3>
+                            <p class="card-description">Uma simple bola para jogar nos pokemons selvagens e pega-los</p>
+                            <p class="card-price">₽ 200</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/potion.webp" alt="potion">
+                        <div class="card-info">
+                            <p class="tag">Potion</p>
+                            <h3 class="card-title">Potion</h3>
+                            <p class="card-description">Uma poção para recuperar um pouco de vida de seu pokemon</p>
+                            <p class="card-price">₽ 250</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/ether.png" alt="Ether">
+                        <div class="card-info">
+                            <p class="tag">Potion</p>
+                            <h3 class="card-title">Ether</h3>
+                            <p class="card-description">Uma poção para recuperar um pouco de PP de um golpe do pokemon</p>
+                            <p class="card-price">₽ 200</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/revive.webp" alt="revive">
+                        <div class="card-info">
+                            <p class="tag">Potion</p>
+                            <h3 class="card-title">Revive</h3>
+                            <p class="card-description">Um item para levantar seu pokemon que foi derrotado em batalha</p>
+                            <p class="card-price">₽ 500</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/zinc.webp" alt="zinc">
+                        <div class="card-info">
+                            <p class="tag">Medicine</p>
+                            <h3 class="card-title">Zinc</h3>
+                            <p class="card-description">Um item para elevar a defesa especial de seu pokemon</p>
+                            <p class="card-price">₽ 9800</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/iron.webp" alt="iron">
+                        <div class="card-info">
+                            <p class="tag">Medicine</p>
+                            <h3 class="card-title">Iron</h3>
+                            <p class="card-description">Um item para elevar a defesa de seu pokemon</p>
+                            <p class="card-price">₽ 9800</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/tm.webp" alt="tm">
+                        <div class="card-info">
+                            <p class="tag">Machine</p>
+                            <h3 class="card-title">TM 10</h3>
+                            <p class="card-description">Ensina ao seu pokemon o golpe Hidden Power</p>
+                            <p class="card-price">₽ 3000</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/tm.webp" alt="tm">
+                        <div class="card-info">
+                            <p class="tag">Machine</p>
+                            <h3 class="card-title">TM 06</h3>
+                            <p class="card-description">Ensina ao seu pokemon o golpe Toxic</p>
+                            <p class="card-price">₽ 3000</p>
+                            <button>Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+            </section>
+            <aside id="pesquisa-carrinho">
+                <div id="pesquisa">
+                    <input type="text" id="search-input" placeholder="Digite aqui sua pesquisa" />
+                    <button type="button" id="search-btn">Pesquisar</button>
+                </div> 
+                <div id="carrinho">
+                    <div id="selected-pokemon">
+                        <div id="selected-pokemon-title">Pokemon Selecionado</div>
+                        <div id="choosen-pokemon"> Nenhum</div>
+                    </div>
+                    <h2 id="carrinho-title">Carrinho de compras</h2>
+                    <div id="carrinho-body">
+                        <div class="card-carrinho">
+                            <img src="./img/pokeball.webp" alt="pokeball">
+                            <div class="card-carrinho-info">
+                                <h3 class="card-carrinho-title">Pokeball</h3>
+                                <p class="card-carrinho-price">₽ 200</p> 
+                                <button>Remover produto</button>
+                            </div>
+                        </div>
+                        <div class="card-carrinho">
+                            <img src="./img/zinc.webp" alt="pokeball">
+                            <div class="card-carrinho-info">
+                                <h3 class="card-carrinho-title">Zinc</h3>
+                                <p class="card-carrinho-price">₽ 9800</p> 
+                                <button>Remover produto</button>
+                            </div>
+                        </div>
+                    </div>
+                <div id="carrinho-footer">
+                    <p id="checkout-carrinho-amount"><span class="checkout-left">Quantidade:</span> <span class="checkout-right">2</span></p>
+                    <p id="checkout-carrinho-total"><span class="checkout-left">Total:</span> <span class="checkout-right">₽ 10000</span></p>
+                    <button>Finalizar a compra</button>
+                </div>
+            </aside>
+        </main>
+        
+</body>
+</html>
