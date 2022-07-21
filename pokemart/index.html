@@ -151,10 +151,41 @@
                 <div id="carrinho-footer">
                     <p id="checkout-carrinho-amount"><span class="checkout-left">Quantidade:</span> <span class="checkout-right">2</span></p>
                     <p id="checkout-carrinho-total"><span class="checkout-left">Total:</span> <span class="checkout-right">₽ 10000</span></p>
-                    <button>Finalizar a compra</button>
+                    <button id="finish-cart-btn">Finalizar a compra</button>
                 </div>
             </aside>
         </main>
-        
+        <div class="modal" id="checkout-modal" data-closemodal="true">
+            <div class="modal-content">
+                <div class="modal-header">  <span>Pagamento</span> <button data-closemodal="true" id="close-modal">X</button></div>
+                <div class="modal-body" id="products-to-buy">
+                    <h2>Itens no carrinho:</h2>
+                    <div id="cart-items">
+                    <div class="card-checkout">
+                        <img src="./img/pokeball.webp" alt="pokeball">
+                        <div class="card-checkout-info">
+                            <h3 class="card-checkout-title">Pokeball</h3>
+                            <p class="card-checkout-price">₽ 200</p> 
+                        </div>
+                    </div>
+                    <div class="card-checkout">
+                        <img src="./img/pokeball.webp" alt="pokeball">
+                        <div class="card-checkout-info">
+                            <h3 class="card-checkout-title">Pokeball</h3>
+                            <p class="card-checkout-price">₽ 200</p> 
+                        </div>
+                    </div>
+                    <div class="card-checkout">
+                        <img src="./img/pokeball.webp" alt="pokeball">
+                        <div class="card-checkout-info">
+                            <h3 class="card-checkout-title">Pokeball</h3>
+                            <p class="card-checkout-price">₽ 200</p> 
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer" id="finish-value"> Total a pagar: ₽ 1000 Quantidade de itens 3 <button>Ir para pagmento</button></div>
+            </div>
+        </div>
 </body>
 </html>

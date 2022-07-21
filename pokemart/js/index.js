@@ -95,8 +95,9 @@ function addToCart(e){
         document.getElementById('carrinho-footer').innerHTML = `<div id="carrinho-footer">
         <p id="checkout-carrinho-amount"><span class="checkout-left">Quantidade:</span> <span class="checkout-right">0</span></p>
         <p id="checkout-carrinho-total"><span class="checkout-left">Total:</span> <span class="checkout-right">₽ 0</span></p>
-        <button>Finalizar a compra</button>
+        <button id="finish-cart-btn">Finalizar a compra</button>
     </div>`
+        document.getElementById('finish-cart-btn').addEventListener('click',finishCarrinho)
     }
     isCartEmpty = false;
     let itemAdded
@@ -171,3 +172,33 @@ function selectPokemon(){
     document.getElementById('choosen-pokemon').innerHTML = ` <img src="${selectedPokemon.img}" alt="${selectedPokemon.nameItem}">  ${selectedPokemon.nameItem}</div>`
 }
 document.getElementById('initial-pokemon').addEventListener('click',selectPokemon)
+
+function finishCarrinho(){
+    document.getElementById('cart-items').innerHTML = ''
+    carrinho.forEach(ele=>{
+        document.getElementById('cart-items').innerHTML += `                    
+        <div class="card-checkout">
+        <img src="${ele.img}" alt="${ele.nameItem}">
+        <div class="card-checkout-info">
+            <h3 class="card-checkout-title">${ele.nameItem}</h3>
+            <p class="card-checkout-price">₽ ${ele.value}</p> 
+        </div>
+    </div>`
+    })
+    document.querySelector('#finish-value').innerHTML= ` Total a pagar: ₽ ${cartValue} Quantidade de itens ${cartAmount} <button>Ir para pagamento</button> `
+
+
+
+    document.getElementById('checkout-modal').style.display = 'flex';
+}
+
+
+
+function closeCarrinho(e){
+    if(e.target.dataset.closemodal){
+        document.getElementById('checkout-modal').style.display = 'none';
+    }else{
+        return
+    }
+}
+document.getElementById('checkout-modal').addEventListener('click',closeCarrinho)
